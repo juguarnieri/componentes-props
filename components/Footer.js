@@ -1,13 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Footer() {
+const Footer = ({ copyright }) => {
     return (
-        <View style={styles.footer}>
-            <Text style={styles.footerText}>Acredite no seu potencial e siga em frente! 🚀</Text>
-        </View>
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>{copyright}</Text>
+      </View>
     );
-}
+  };
+  
 
 const styles = StyleSheet.create({
     footer: {
@@ -23,3 +24,5 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
 });
+
+export default Footer;

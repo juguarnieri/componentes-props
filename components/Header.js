@@ -1,13 +1,14 @@
 import React from "react";
 import {View, Text, StyleSheet} from "react-native";
 
-export default function Header() {
+const Header = ({ title }) => {
   return (
     <View style={styles.header}>
-    <Text style={styles.headerText}>Bem-vindo ao App 🌟</Text>
-</View>
+      <Text style={styles.headerText}>{title}</Text>
+    </View>
   );
-}
+};
+
 const styles = StyleSheet.create({
     header: {
         backgroundColor: "#6200ee",
@@ -23,3 +24,5 @@ const styles = StyleSheet.create({
         color: "white",
     },
 });
+
+export default Header;

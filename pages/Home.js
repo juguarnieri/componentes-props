@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header title="Bem-vindo ao Meu Aplicativo🚀" />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Card
           image="https://static.vecteezy.com/ti/vetor-gratis/p1/17762049-mulher-atraente-fechando-os-olhos-toca-flor-gigante-apreciando-a-beleza-natural-e-o-cheiro-agradavel-menina-perto-de-flor-simboliza-o-uso-de-cosmeticos-sem-adicao-de-quimica-ilustracaoial-plana-vetor.jpg"
@@ -25,7 +25,7 @@ export default function Home() {
           description="Explore novos lugares e viva experiências incríveis!"
         />
       </ScrollView>
-      <Footer />
+      <Footer copyright="© 2025 todos os direitos reservados." />
     </View>
   );
 }
